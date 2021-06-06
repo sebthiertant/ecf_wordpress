@@ -31,9 +31,7 @@
 					<span class="bar"></span>
 					<span class="bar"></span>
 				</button>
-
-				<?php wp_nav_menu('nav_menu', 'menu', 'menu') ; ?>
-		
+				<?php wp_nav_menu(['theme_location' => 'nav_menu'],['menu_id'=> 'menu'],['menu_class'=> 'menu']) ; ?>
 			</nav>
 		</div>
 	</header>

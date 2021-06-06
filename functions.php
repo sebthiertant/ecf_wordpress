@@ -1,19 +1,13 @@
 <?php 
 
 function starting_theme_functions() {
-
+    add_theme_support( 'menus' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
 
-    register_nav_menus( array(
-        'nav_menu' => 'Main navigation menu',
-    ));
-    register_nav_menus( array(
-        'footer_menu' => 'Footer menu',
-    ));
-    register_nav_menus( array(
-        'social_menu' => 'Social networks menu',
-    ));    
+    register_nav_menu('nav_menu','Main navigation menu',);
+    register_nav_menu('footer_menu','Footer navigation',);
+    register_nav_menu('social_menu', 'Social networks menu');
 
 }
 
