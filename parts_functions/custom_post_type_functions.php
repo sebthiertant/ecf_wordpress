@@ -22,6 +22,38 @@
 	);
 
 	register_post_type( 'portfolio', $args );
+
+// TAXONOMIE
+
+// Taxonomy technology
+
+    $labels = array(
+        'name' => "Technologie",
+        'new_item_name' => 'Nouvelle technologie',
+    );
+    
+    $args = array( 
+        'labels' => $labels,
+        'public' => true, 
+        'show_in_rest' => true,
+        'hierarchical' => true, );
+    
+        register_taxonomy( 'technologie', 'portfolio', $args );
+
+// Taxonomy skills
+
+        $labels = array(
+            'name' => "Compétences",
+            'new_item_name' => 'Nouvelle Compétences',
+        );
+        
+        $args = array( 
+            'labels' => $labels,
+            'public' => true, 
+            'show_in_rest' => true,
+            'hierarchical' => true, );
+        
+            register_taxonomy( 'competence', 'portfolio', $args );
 }
 
 add_action( 'init', 'register_post_types' );
