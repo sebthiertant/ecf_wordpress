@@ -8,14 +8,13 @@ function starting_theme_functions() {
     register_nav_menu('nav_menu','Main navigation menu',);
     register_nav_menu('footer_menu','Footer navigation',);
     register_nav_menu('social_menu', 'Social networks menu');
-
 }
 
 add_action( 'after_setup_theme', 'starting_theme_functions' );
 
+
 require_once get_template_directory() . '/parts_functions/script.php' ; 
 require_once get_template_directory() . '/parts_functions/custom_post_type_functions.php' ; 
-
 
 
 if( function_exists('acf_add_options_page') ) {

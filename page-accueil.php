@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <main id="main-content">
         <section class="hero">
             <div class="container">
@@ -22,7 +21,7 @@
                 <div class="about-content">
                     <h2>About me</h2>
                     <p><?php the_field('home_description');?></p>
-                    <a href="portfolio.html" class="btn-secondary"><?php the_field('description_button');?></a>
+                    <a href="portfolio" class="btn-secondary"><?php the_field('description_button');?></a>
                 </div>
             </div>
         </section>
