@@ -7,7 +7,7 @@
 		</div>
 		<div class="bottom-footer">
 			<div class="container">
-				<a href="http://localhost/ecf_test_restore/" class="logo">
+				<a href="<?php echo home_url( '/' ); ?>" class="logo">
 				<svg xmlns="http://www.w3.org/2000/svg" width="61" height="32" aria-hidden="true">
 					<path fill="#FFFFFF" fill-rule="evenodd" stroke="#FFFFFF" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/>
 				</svg>
